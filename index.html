@@ -12,6 +12,7 @@
     <style>
       body {
         background-color: rgb(52, 49, 49);
+        font-family: "Times New Roman", Times, serif;
       }
       .container {
         background: black;
@@ -73,21 +74,26 @@
         font-size: 50px;
         color: white;
       }
-      .percent,
-      p {
-        font-size: 24px;
+      .percent {
+        font-size: 20px;
         color: white;
         position: relative; /* Add this line */
         top: -13px;
         left: 1px;
       }
-      .hello-wind,
-      p {
+      .hello-wind {
         font-size: 20px;
         color: white;
         position: relative; /* Add this line */
         top: -17px;
         left: 7px;
+      }
+      .wind,
+      .windi {
+        color: white;
+        position: relative; /* Add this line */
+        top: -13px;
+        left: 54px;
       }
 
       footer {
@@ -126,12 +132,12 @@
             >humidity_percentage
           </span>
           <span class="percent">59%</span>
-          <p>humidity</p>
+          <p class="windi">humidity</p>
         </div>
         <div class="windspeed">
           <span class="material-symbols-outlined humid">air </span>
           <span class="hello-wind">10.9 km/h</span>
-          <p>windspeed</p>
+          <p class="wind">windspeed</p>
         </div>
       </div>
       <footer>
