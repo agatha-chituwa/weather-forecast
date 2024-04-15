@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(52, 49, 49);
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  background: black;
+
+  max-width: 600px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+}
+input[type="search"] {
+  padding: 10px;
+  width: 60%;
+  border-radius: 50px;
+  background: #ebfdfb;
+  border: 1px solid rgb(192, 186, 186);
+  margin-left: 50px;
+}
+input[type="submit"] {
+  background-color: black;
+  border: none;
+}
+.search-icon {
+  border: 1px solid rgb(192, 186, 186);
+  background: #ebfdfb;
+  line-height: 1;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 20px;
+  width: 40px;
+  position: relative;
+  top: 8px;
+}
+main {
+  max-width: 55%;
+  margin: 35px auto;
+}
+img {
+  height: 100px;
+  width: 100px;
+}
+.icon,
+.dateTime,
+h1,
+h2 {
+  text-align: center;
+  color: white;
+}
+.humid-windspeed {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.humidity {
+  position: relative;
+}
+.humid {
+  position: relative;
+  font-size: 50px;
+  color: white;
+  left: 8px;
+}
+.percent {
+  font-size: 20px;
+  color: yellow;
+  position: relative; /* Add this line */
+  top: -15px;
+  left: 2px;
+}
+.hello-wind {
+  font-size: 20px;
+  color: yellow;
+  position: relative; /* Add this line */
+  top: -17px;
+  left: 7px;
+}
+.wind,
+.windi {
+  color: white;
+  position: relative; /* Add this line */
+  top: -13px;
+  left: 54px;
+}
+footer p {
+  color: white;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
