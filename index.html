@@ -9,115 +9,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <style>
-      body {
-        background-color: rgb(52, 49, 49);
-        font-family: "Times New Roman", Times, serif;
-      }
-      .container {
-        background: black;
-
-        max-width: 600px;
-        margin: 45px auto;
-        box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-        border-radius: 16px;
-        padding: 30px;
-      }
-      input[type="search"] {
-        padding: 10px;
-        width: 60%;
-        border-radius: 50px;
-        background: #ebfdfb;
-        border: 1px solid rgb(192, 186, 186);
-        margin-left: 50px;
-      }
-      input[type="submit"] {
-        background-color: black;
-        border: none;
-      }
-      .search-icon {
-        border: 1px solid rgb(192, 186, 186);
-        background: #ebfdfb;
-        line-height: 1;
-        padding: 5px;
-        border-radius: 50px;
-        margin-left: 20px;
-        width: 40px;
-        position: relative;
-        top: 8px;
-      }
-      main {
-        max-width: 55%;
-        margin: 35px auto;
-      }
-      img {
-        height: 100px;
-        width: 100px;
-      }
-      .icon,
-      .dateTime,
-      h1,
-      h2 {
-        text-align: center;
-        color: white;
-      }
-      .humid-windspeed {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      .humidity {
-        position: relative;
-      }
-      .humid {
-        position: relative;
-        font-size: 50px;
-        color: white;
-        left: 8px;
-      }
-      .percent {
-        font-size: 20px;
-        color: yellow;
-        position: relative; /* Add this line */
-        top: -15px;
-        left: 2px;
-      }
-      .hello-wind {
-        font-size: 20px;
-        color: yellow;
-        position: relative; /* Add this line */
-        top: -17px;
-        left: 7px;
-      }
-      .wind,
-      .windi {
-        color: white;
-        position: relative; /* Add this line */
-        top: -13px;
-        left: 54px;
-      }
-      footer p {
-        color: white;
-      }
-
-      footer {
-        border-top: 1px solid #f9f7fe;
-        padding: 30px 0 0 0;
-        text-align: center;
-        font-size: 14px;
-        color: rgba(0, 0, 0, 0.6);
-      }
-    </style>
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <form action="">
+        <form action="" id="search-form">
           <input
             type="search"
             name=""
-            id=""
+            id="search-input"
             placeholder="Enter a city..."
             required
           />
@@ -130,7 +31,7 @@
       <main>
         <div class="icon"><img src="/sun.png" alt="" /></div>
         <div class="temperature"><h1>11 °C</h1></div>
-        <div class="title"><h2>New York</h2></div>
+        <div class="title"><h2 id="city">New York</h2></div>
         <div class="dateTime"><p>Tuesday 14:49, scattered clouds</p></div>
       </main>
 
@@ -165,5 +66,6 @@
         </p>
       </footer>
     </div>
+    <script src="/src/index.js"></script>
   </body>
 </html>
