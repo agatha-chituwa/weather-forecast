@@ -11,7 +11,7 @@
     />
     <style>
       body {
-        background-color: pink;
+        background-color: rgb(52, 49, 49);
       }
       .container {
         background: rgb(103, 119, 14);
@@ -68,18 +68,31 @@
         color: white;
       }
       .humid-windspeed {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+      }
+      .humidity {
         position: relative;
       }
       .humid {
+        font-size: 50px;
         color: white;
-        font-size: 45px;
-        right: 3px;
       }
-      .windspeed span {
-        right: 5px;
+      .percent {
+        font-size: 24px;
+        color: white;
+        position: relative; /* Add this line */
+        top: -13px;
+        left: 1px;
+      }
+      .hello-wind {
+        font-size: 24px;
+        color: white;
+        position: relative; /* Add this line */
+        top: -17px;
+        left: 7px;
       }
 
       footer {
@@ -110,17 +123,19 @@
         <div class="title"><h2>New York</h2></div>
         <div class="dateTime"><p>Tuesday 14:49, scattered clouds</p></div>
       </main>
+
+      <!-- this is the middle section -->
       <div class="humid-windspeed">
         <div class="humidity">
           <span class="material-symbols-outlined humid"
             >humidity_percentage
           </span>
-          <span>48%</span>
+          <span class="percent">59%</span>
           <p>humidity</p>
         </div>
         <div class="windspeed">
           <span class="material-symbols-outlined humid">air </span>
-          <span>10.9 km/h</span>
+          <span class="hello-wind">10.9 km/h</span>
           <p>windspeed</p>
         </div>
       </div>
@@ -128,7 +143,7 @@
         <p>
           This project was coded by <a href="">Agatha Chituwa</a> and
           <a href=""> is open-sourced on Github</a> and
-          <a href="">hosted on Netlify</a>
+          <a href="https://weatherforcastag.netlify.app/">hosted on Netlify</a>
         </p>
       </footer>
     </div>
