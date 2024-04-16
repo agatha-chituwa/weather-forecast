@@ -1,5 +1,6 @@
-- This is weather web app. Designed purely with html and css
-- Fully working search engine, search for any city. using shecode.io API
+- This is weather web app. Designed purely with html and css and javascript for API intergration.
+- Fully working search engine, search for any city.
+- Used shecodes.io weather API
 
 
 
