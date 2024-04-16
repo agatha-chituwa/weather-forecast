@@ -1,6 +1,8 @@
 //inject the name of the search from the search
 
 let apiKey = "3tcfof90f4d5fcef43527800bff1b7ea";
+//this function will get the conditions humidity and winds okay?
+
 //get results from api
 function refreshWeather(Response) {
   //make api call and update the ui
@@ -8,7 +10,44 @@ function refreshWeather(Response) {
   let temperature = document.querySelector("#temperature");
   let temp = Math.round(Response.data.temperature.current);
   temperature.innerHTML = `${temp}°C`;
+  let conditions = document.querySelector("#conditions");
+  let weathercondition = Response.data.condition.description;
+  //wind
+  let wind = document.querySelector(".hello-wind");
+  let windspeed = Response.data.wind.speed;
+  //humidity
+  let humidity = document.querySelector(".percent");
+  let currenthumidity = Response.data.temperature.humidity;
+  //time
+  let date = new Date(Response.data.time * 1000);
+
+  let timeElement = document.querySelector("#time");
+  timeElement.innerHTML = formattDate(date);
+
+  humidity.innerHTML = `${currenthumidity} %`;
+  wind.innerHTML = `${windspeed} km/h`;
+  conditions.innerHTML = weathercondition;
   cityplaceholder.innerHTML = Response.data.city;
+}
+//function format date
+function formattDate(date) {
+  let day = date.getDay();
+  let minutes = date.getMinutes();
+  let hour = date.getHours();
+  let days = [
+    "sunday",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+  ];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  day = days[day];
+  return `${day}, ${hour}: ${minutes}`;
 }
 
 //function to handle search
