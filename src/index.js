@@ -23,7 +23,10 @@ function refreshWeather(Response) {
 
   let timeElement = document.querySelector("#time");
   timeElement.innerHTML = formattDate(date);
+  let icon = document.querySelector("#icon");
 
+  let iconImage = `  <img src="${Response.data.condition.icon_url}" class="weather-app-icon" />`;
+  icon.innerHTML = iconImage;
   humidity.innerHTML = `${currenthumidity} %`;
   wind.innerHTML = `${windspeed} km/h`;
   conditions.innerHTML = weathercondition;
