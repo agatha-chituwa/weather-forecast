@@ -50,7 +50,7 @@ function formattDate(date) {
     minutes = `0${minutes}`;
   }
   day = days[day];
-  return `${day}, ${hour}: ${minutes}`;
+  return `${day}  ${hour}: ${minutes}`;
 }
 
 //function to handle search
@@ -68,4 +68,4 @@ function handleSearch(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearch);
 
-searchCity("paris");
+searchCity("lilongwe");
