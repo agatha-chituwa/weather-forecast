@@ -1,7 +1,5 @@
 //inject the name of the search from the search
 
-alert("for better view, view from desktop");
-
 let apiKey = "3tcfof90f4d5fcef43527800bff1b7ea";
 //this function will get the conditions humidity and winds okay?
 
