@@ -86,7 +86,7 @@ h2 {
   top: -13px;
   left: 54px;
 }
-.row {
+.weather-forecast {
   display: flex;
   flex-direction: row;
 }
@@ -96,14 +96,22 @@ h2 {
 
   border-radius: 10px;
   padding: 5px;
-  margin: 15px 5px;
+  margin: 25px 5px;
   flex: 1;
   text-align: center;
   justify-content: center;
 }
 .forcast-day {
   font-weight: bold;
+  font-size: 26px;
+}
+.forecast-current-temperature {
   font-size: 16px;
+}
+.forecast-minimum-temperature {
+  margin-left: 2px;
+  font-size: 13px;
+  opacity: 0.5;
 }
 footer p {
   color: white;

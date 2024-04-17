@@ -69,3 +69,30 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearch);
 
 searchCity("lilongwe");
+
+//forecast code
+function displayforecast() {
+  let weatherforcast = document.querySelector("#weather-forecast");
+  let days = ["tue", "wed", "thur", "fri", "sat"];
+  let forecasthtml = "";
+  days.forEach(function (day) {
+    forecasthtml =
+      forecasthtml +
+      `        <div class="column">
+          <div class="forcast-day">${day}</div>
+          <div class="forcast-icon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              alt=""
+              style="width: 40px; height: 40px"
+            />
+          </div>
+          <div class="forecast-temperature">
+            <span class="forecast-current-temperature"> 12º </span>
+            <span class="forecast-minimum-temperature"> 18º </span>
+          </div>
+        </div>`;
+  });
+  weatherforcast.innerHTML = forecasthtml;
+}
+displayforecast();
